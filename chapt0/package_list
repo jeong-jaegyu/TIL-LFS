@@ -1,0 +1,239 @@
+## A package labeled with (?) doesn't mean I don't know what it does, just that I'm flagging it
+## to look into it later on.
+##
+## Key
+## ? > I kind of understand
+## ?? > Needs more reading
+## ??? > Give me a 2 hour lecture
+## * > Modified to _MY_ desires, but the
+##         original package is still listed before
+## :- > first time I've heared of this package.
+
+
+-- Defined by LFS --
+
+Acl (?):-
+    Contains utilities to administer Access Control Lists; Allow for more fine grained access rights
+
+Attr (??):-
+    Contains programs for administering extended attributes on filesystem objects
+
+Autoconf:
+    Makes scripts from developer templates. Useful for rebuilding a package after it updates.
+
+Automake:
+    Contains programs for generating Makefiles from developer template. Ditto autoconf
+
+Bash (* Dash/Zsh):
+    Bourne again shell interface. 
+
+Bc (?):-
+    Provides arbitrary numeric processing language. Used to build kernel
+
+Binutils (?):
+    Linker, assembler, + for handling bins. Needed to compile most packages in LFS.
+
+Bison (?):-
+    Contains the GNU version of YACC (Yet another compiler). Needed to build some packages in LFS
+
+Bzip2 (?):
+    Compression tools.
+
+Check (??):-
+    Hardness test for other programs.
+
+Coreutils (???):
+    Contains a number of essential programs for viewing and
+         manipulating files and dirs. (ls / vi, etc)
+
+DejaGNU (???):-
+    Package contains framework for testing other programs. (very discriptive thanks :/)
+
+Diffutils:
+    Package contains programs that show the differences between files or dirs. Used to create patches. (?)
+
+E2fsprogs* (??, might attempt to do another fs):
+    Contains utilities for ext2-4 fs.
+
+Eudev (???):
+    Device manager. Dyn controlls ownership, perms, symlinks of devices in the /dev dir.
+
+Expat:-
+     Parses XML
+
+Expect (???):-
+     This package contains a program for carrying out scripted dialogues with other
+          interactive programs. It is commonly used for testing other packages. Whatever that means.
+
+File:
+     Used for determining object type.
+
+Findutils:
+    Contains programs that help find files in a fs.
+
+Flex (?):-
+    GNU Lexxer.
+
+Gawk (???):
+    Program for manipulating text files. GNU version of AWK
+
+GCC:
+    Gnu compiler collection. GCC/G++/F etc
+
+GDBM:-
+    Used by the man-db pages.
+
+Gettext:-
+    Used for localization i guess
+
+Glibc* (might swap for muscl) :
+    GNU C library.
+
+GMP:-
+    Precise math libraries that provide functions to compile GCC
+
+Gperf:-
+    Provides a program that generates a zero collision hash function from a key set. Req by Eudev.
+
+Grep:
+    Searching through text with regex
+
+Groff:-
+    Provides programs for processing and formatting text. Used to format the man pages.
+
+GRUB* (maybe systemd-boot or a kernel stub):
+    Bootloader.
+
+Gzip:
+    Contains programs for compressing and decompressing.
+
+Iana-etc (???):-
+    Provides data for network services and protocols. It is needed to enable proper networking.
+
+Inetutils (?):-
+    Provides programs for basic network administration.
+
+Intltool:-
+    Contains tools for extracting strings from source files. Translations.
+
+IProute2 (???):
+    Basic & advanced IPv4 + IPv6 networking.
+
+Kbd (?):
+    Contains key-table values, keyboard utils, + console fonts
+
+Kmod (???):-
+    Contains programs needed to administer Linux kernel modules.
+
+Less:
+    Terminal file reader that allows scrolling.
+
+Libcap (???):-
+    The elfutils project provides libraries and tools for ELF and DWARF- (???) data.
+        Most of it is redundant but needed to compile the kernel.
+
+Libffi (??):-
+    Implements a portable, high level programming interface to various calling conventions.
+        Some programs may not know at the time of compilation what arguments are to be passed
+        to a function. (One of a few things that I'm not sure it's worthwhile to look into it)
+
+Libpipeline (?):-
+    Contains a library for manipulating pipelines of subprocesses flexibly. Used by Man-DB     
+
+Libtool (?):-
+    Contains generic library support script. Makes using shared libraries more consistant
+        portable. Depended by the test suites.
+
+Linux Kernel* (LTS/Hardened):
+    The OS.
+
+M4 (??):-
+    Contains a general text macro proccessor. Used as a build tool for some programs.
+
+Make:
+    Directs the building of packages.
+
+Man-DB:
+    Contains programs for finding and viewing man pages.
+
+Meson (?):-
+    Automates the building of software.
+
+MPC (?):-
+    Contains functions for calc complex numbers. Req for GCC.
+
+MPFR:-
+    Multiple precision math. Req for GCC.
+
+Ninja:
+    Small build system designed to run builds as fast as possible.
+
+Ncurses:
+    Contains libs for terminal-agnostic handling of screens.
+
+Openssl (???):
+    Provides tools relating to cryptography. Provides crypt functions to other packages.
+
+Patch (??):-
+    Contains a program for modifying and creating files by applying a patch.
+
+Perl (?):
+    Needed for installion and test suites. Wanna learn this one someday.
+
+Pkg-config:
+    Program that returns meta-data about an installed library or package.
+
+Procps-NG (???):-
+    Contains programs for monitoring processes. These programs are useful for sysaministration.
+
+Python 3:
+    Yep it's Python
+
+Readline (??):
+    Offeres cli editing and hist capabilities. Used by bash.
+
+Sed (???):
+    Allows for text editing without an editor.
+
+Shadow:
+    Contains programs for handling passwords in a secure way.
+
+Sysklogd (???):-
+    Contains programs for logging system messages, from kernel or services.
+
+Sysvinit (???):
+    Provides the init program, the parent of all other processes.
+
+Tar:
+    Archiving and extraction program.
+
+Tcl:
+    Contains Tool Command Language used in test suites.
+
+Texinfo (???):-
+    Contains programs for reading, writing, and converting info pages.
+
+Vim*+ (throwing nano in too because i like both of them):
+     It's Vim I guess
+
+XML::Parser
+    Perl module that interfaces with Expat.
+
+XZ Utils:
+    It provides the highest compression generally available and is useful
+        for decompressing packages in XZ or LZMA (?) format.
+
+Zlib:
+    Contains compression and decompression routunes.
+
+Zstd:
+    Ditto .. but high compression ratios and range of speed:compression tradeoffs
+
+
+-- Defined by me --
+
+Nano:
+    Comfortable text editing I use when editing config/kernel settings.
+
+Systemd:
+    System layer, provides a lot of programs that help administrate a linux box.
